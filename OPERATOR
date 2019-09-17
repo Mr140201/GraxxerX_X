@@ -5,7 +5,11 @@ int main ()
     int x;
     int y;
     int z;
+    string a;
 
+    cout << "Siapa Nama Anda (Huruf Kapital Disarankan) : ";
+    cin >> a;
+    cout << "\n\t\t=====>>>> SELAMAT DATANG " << a << " <<<<====="<< endl<<endl;
     cout << "Masukkan Nilai A  = ";
     cin >> x ;
     cout << "Masukkan Nilai B  = ";
@@ -17,6 +21,8 @@ int main ()
     cout <<" A or B = " << ( x || y ) << endl;
     cout <<" A or C = " << ( x || z ) << endl;
     cout <<" F1=(A or B} AND (A or C) = " << ((x || y) && (x || z)) << endl;
+
+    cout << " \n=====>>>>>TERIMA KASIH TELAH MENGGUNAKAN PROGRAM SEDERHANA SAYA<<<<<====="<< endl<<endl;
 
 
     return 0;
