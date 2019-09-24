@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int x,y;
+    int z;
+    string q;
+    cout << "Nama Anda (Huruf Kapital di sarankan): ";
+    cin  >> q;
+    cout << "\n\t\tSELAMAT DATANG "<<q<<endl<<endl;
+    cout << "\nMasukkan nilai X: ";
+    cin  >> x;
+    cout << "\nMasukkan Nilai Y: ";
+    cin  >> y;
+    cout << "HASIL DARI X+Y = "<<x+y<<endl<<endl;
+    z=x+y;
+
+    if (z>=0){
+    cout <<"Nilai Z ADALAH POSITIF";
+    } else {
+    cout <<"Nilai Z ADALAH NEGATIF";
+    }
+    cout <<"\n\n==>>>Program ini adalah program berhitung<<<=="<<endl;
+
+
+    return 0;
+}
