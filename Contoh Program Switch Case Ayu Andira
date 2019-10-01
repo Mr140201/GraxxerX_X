@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+
+int pilihan;
+string bulan;
+
+int main()
+{
+    cout << "Daftar Nama Bulan:\n";
+    cout << "1. Januari \n2. Februari \n3. Maret \n4.April \n5. Mei \n6. Juni";
+    cout << "\n7. Juli \n8. Agustus \n9. September \n10. Oktober \n11. November \n12. Desember";
+
+    ulangi:
+
+    cout << "\n\nMasukkan Pilihan Anda (1-12) : ";
+
+    cin >> pilihan;
+
+    switch (pilihan){
+case 1:
+    bulan = "Januari";
+    break;
+
+case 2:
+    bulan = "Februari";
+    break;
+
+case 3:
+    bulan = "Maret";
+    break;
+
+case 4:
+    bulan = "April";
+    break;
+
+case 5:
+    bulan = "Mei";
+    break;
+
+case 6:
+    bulan = "Juni";
+    break;
+case 7:
+    bulan = "Juli";
+    break;
+
+case 8:
+    bulan = "Agustus";
+    break;
+
+case 9:
+    bulan = "September";
+    break;
+
+case 10:
+    bulan = "Oktober";
+    break;
+
+case 11:
+    bulan = "November";
+    break;
+
+case 12:
+    bulan = "Desember";
+    break;
+
+default:
+    goto ulangi;
+
+    }
+    cout << "Anda Memilih Bulan " << bulan << endl<<endl;
+    return 0;
+}
