@@ -20,9 +20,9 @@ int main ()
     cout << "\nTotal belanja anda = ";
     cin >> belanja;
 
-    if (status=="M" && belanja>=batas_belanja)
+    if (status=="M" || status=="m" && belanja>=batas_belanja)
     {
-        if (anak=="Ya")
+        if (anak=="Ya" || anak=="ya")
         {
             cout << "\nDiskon 75%"<< endl;
             harga=belanja - ( belanja * 0.75);
@@ -35,7 +35,7 @@ int main ()
     }
     else
     {
-        if (kartu_anggota=="Ya" && belanja>=batas_belanja)
+        if (kartu_anggota=="Ya" ||kartu_anggota=="ya" && belanja>=batas_belanja)
             {
             cout << "\nDiskon 25%"<< endl;
             harga = belanja - ( belanja * 0.25);
@@ -52,7 +52,7 @@ cout << "\nApakah anda berasal dari Makassar (Ya atau Tidak) : ";
 string asal;
 cin >> asal;
 
-if (asal=="Tidak")
+if (asal=="Tidak" || asal=="tidak")
 {
     cout << "\nAnda mendapatkan tambahan diskon 10%"<< endl;
     harga = harga - (harga * 0.10);
