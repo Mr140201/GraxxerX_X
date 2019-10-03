@@ -54,13 +54,13 @@ cin >> asal;
 
 if (asal=="Tidak")
 {
-    cout << "\nAnda mendapatkan tambahan diskon 10%";
+    cout << "\nAnda mendapatkan tambahan diskon 10%"<< endl;
     harga = harga - (harga * 0.10);
 }
 else
 {
     harga =harga;
 }
-cout << "Harga keseluruhan dari total belanja anda adalah Rp."<< harga << endl;
+cout << "\nHarga keseluruhan dari total belanja anda adalah Rp."<< harga << endl;
     return 0;
 }
